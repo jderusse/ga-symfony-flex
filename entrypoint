@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+if [ ! -d "./vendor/composer" ]; then
+    composer dump-autoload
+fi
+
+exec /docker-entrypoint.sh "$@"
