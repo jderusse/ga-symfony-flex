@@ -1,0 +1,11 @@
+name: 'Composer with flex'
+description: 'Run compose commands'
+author: 'Jérémy Derussé <jeremy@derusse.com>'
+
+runs:
+  using: 'docker'
+  image: 'docker://jderusse/ga-symfony-flex:latest'
+
+branding:
+  icon: 'package'
+  color: 'orange'

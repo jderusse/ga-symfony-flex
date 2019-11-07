@@ -20,7 +20,7 @@ jobs:
     - name: Dump raw config file
       run: echo "${{ secrets.CONFIG }}" > ./.env.prod.local
     - name: Generate config file
-      uses: docker://jderusse/ga-symfony-flex
+      uses: jderusse/ga-symfony-flex@master
       with:
         args: composer symfony:dump-env prod --ansi
 ```
